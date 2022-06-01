@@ -36,6 +36,7 @@ fi
 read -p $'\e[33;46;1mDo you want to push? (y/n) \e[m' YN2
 
 if [ "$YN2" = "y" ]; then
+	git remote -v
 	read -p $'\e[33;36;1mrepo & branch >> git push : \e[m' ARG
 	echo "========================="
 	echo -e "\033[0;36mgit push $ARG\033[0;39m"
