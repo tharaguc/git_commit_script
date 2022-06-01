@@ -10,7 +10,7 @@ _\__, / /_/  \__/     \___/ \____//_/ /_/ /_//_/ /_/ /_//_/  \__/     /____/ \__
 
 ## Installation
 ```
-$> git clone https://github.com/tharaguc/git_commit_script.git && cd git_commit_script && ./install.sh
+git clone https://github.com/tharaguc/git_commit_script.git && cd git_commit_script && ./install.sh
 ```
 ![install_sample](https://github.com/tharaguc/git_commit_script/blob/image/sample2.png)
 ## Usage
