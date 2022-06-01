@@ -11,4 +11,4 @@ _\__, / /_/  \__/     \___/ \____//_/ /_/ /_//_/ /_/ /_//_/  \__/     /____/ \__
 ./commit.sh [files to commit (accept ".")]
 ```
 
-![sample](https://github.com/tharaguc/git_commit_sh/blob/image/sample.png)
+![sample](https://github.com/tharaguc/git_commit_script/blob/image/sample.png)
