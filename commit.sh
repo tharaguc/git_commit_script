@@ -8,9 +8,9 @@ do
 	git add $x
 done
 
-echo "---"
-git status | grep "\t"
-echo "---"
+echo "---------"
+git status
+echo "---------"
 
 read -p $'\e[33;46;1mDo you want to commit? (y/n) \e[m' YN
 
