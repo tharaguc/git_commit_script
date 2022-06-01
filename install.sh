@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Command name for this script : " NAME
+read -p $'\e[33;36;1mCommand name for this script : \e[m' NAME
 
 cp commit.sh ./$NAME
 
