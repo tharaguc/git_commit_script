@@ -4,3 +4,5 @@
 ```
 ./commit.sh [files to commit (accept ".")]
 ```
+
+![sample](https://github.com/tharaguc/git_commit_sh/blob/image/sample.png)
