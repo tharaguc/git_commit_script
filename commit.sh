@@ -19,7 +19,7 @@ if [ "$YN" = "y" ]; then
 	while [ "$COMMITOK" != "y" ]
 	do
 		echo "========================="
-		read -p $'\e[33;46;1mCommit message :\e[m' MSG
+		read -p $'\e[33;36;1mCommit message :\e[m' MSG
 		echo -e ">> \033[0;36mgit commit -m \"$MSG\"\033[0;39m"
 		read -p "OK? (y/n) " COMMITOK
 	done
@@ -31,12 +31,12 @@ else
 	exit
 fi
 
-read -p "Do you want to push? (y/n) " YN2
+read -p $'\e[33;46;1mDo you want to push? (y/n) \e[m' YN2
 
 if [ "$YN2" = "y" ]; then
-	read -p "git push " ARG
-	echo "========================="
-	echo "git push $ARG"
+	read -p ">> git push " ARG
+	echo -e "========================="
+	echo "\033[0;36mgit push $ARG\033[0;39m"
 	git push $ARG
 	echo "========================="
 else
