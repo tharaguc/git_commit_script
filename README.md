@@ -12,9 +12,10 @@ _\__, / /_/  \__/     \___/ \____//_/ /_/ /_//_/ /_/ /_//_/  \__/     /____/ \__
 ```
 $> ./install.sh
 ```
+![install_sample](https://github.com/tharaguc/git_commit_script/blob/image/sample2.png)
 ## Usage
 ```
 $> [Name of the command you set] [files to commit (accept ".")]
 ```
 
-![sample](https://github.com/tharaguc/git_commit_script/blob/image/sample.png)
+![use_sample](https://github.com/tharaguc/git_commit_script/blob/image/sample.png)
