@@ -12,7 +12,7 @@ echo "---------"
 git status
 echo "---------"
 
-read -p $'\e[33;46;1mDo you want to commit? (y/n) \e[m' YN
+read -p $'\e[33;46;1mDo you want to commit? (y/n)\e[m ' YN
 
 
 COMMITOK="n"
@@ -20,10 +20,14 @@ COMMITOK="n"
 if [ "$YN" = "y" ]; then
 	while [ "$COMMITOK" != "y" ]
 	do
+		if [ "$COMMITOK" == "e" ];then
+			git reset HEAD
+			exit
+		fi
 		echo "========================="
 		read -p $'\e[33;36;1mCommit message : \e[m' MSG
-		echo -e ">> \033[0;36mgit commit -m \"$MSG\"\033[0;39m"
-		read -p "OK? (y/n) " COMMITOK
+		echo -e ">> \033[0;35mgit commit -m \"$MSG\"\033[0;39m"
+		read -p $'\e[33;46;1mOK? (y/n/e)\e[m ' COMMITOK
 	done
 	echo ">>>>>>>>>>>>>>>>>>>>>>"
 	git commit -m "$MSG"
@@ -33,7 +37,7 @@ else
 	exit
 fi
 
-read -p $'\e[33;46;1mDo you want to push? (y/n) \e[m' YN2
+read -p $'\e[33;46;1mDo you want to push? (y/n)\e[m ' YN2
 
 if [ "$YN2" = "y" ]; then
 	git remote -v
