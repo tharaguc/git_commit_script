@@ -34,9 +34,9 @@ fi
 read -p $'\e[33;46;1mDo you want to push? (y/n) \e[m' YN2
 
 if [ "$YN2" = "y" ]; then
-	read -p ">> git push " ARG
-	echo -e "========================="
-	echo "\033[0;36mgit push $ARG\033[0;39m"
+	read -p $'\e[33;36;1mrepo & branch >>  \e[mgit push ' ARG
+	echo "========================="
+	echo -e "\033[0;36mgit push $ARG\033[0;39m"
 	git push $ARG
 	echo "========================="
 else
