@@ -3,7 +3,7 @@
 for x in $@
 do
 	echo "========================="
-	echo -e "\033[0;36mgit add $x\033[0;39m"
+	echo -e "\033[0;35mgit add $x\033[0;39m"
 	echo "========================="
 	git add $x
 done
@@ -43,7 +43,7 @@ if [ "$YN2" = "y" ]; then
 	git remote -v
 	read -p $'\e[33;36;1mrepo & branch >> git push : \e[m' ARG
 	echo "========================="
-	echo -e "\033[0;36mgit push $ARG\033[0;39m"
+	echo -e "\033[0;35mgit push $ARG\033[0;39m"
 	git push $ARG
 	echo "========================="
 else
