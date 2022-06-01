@@ -6,9 +6,15 @@ _  /_/ /_  / / /_     / /__ / /_/ /  / / / / /  / / / / /  / / /_     _(__  )/ /
 _\__, / /_/  \__/     \___/ \____//_/ /_/ /_//_/ /_/ /_//_/  \__/     /____/ \___/ /_/    /_/  _  .___/\__/  
 /____/                                                                                         /_/           
 ```
+
+
+## Installation
+```
+$> ./install.sh
+```
 ## Usage
-```sh
-./commit.sh [files to commit (accept ".")]
+```
+$> [Name of the command you set] [files to commit (accept ".")]
 ```
 
 ![sample](https://github.com/tharaguc/git_commit_script/blob/image/sample.png)
